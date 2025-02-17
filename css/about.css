@@ -1,14 +1,14 @@
 :root {
     --primary-color: #3498db;
-    --secondary-color: #405871;
-    --background-color: #f4f4f4;
+    --secondary-color: gray;
+    --background-color: white;
     --border-radius: 5px;
     --transition-speed: 0.3s;
 }
 
 body {
-    background-color: #eee;
-    color: #222;
+    background-color: var(--background-color);
+    color: black;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     margin: 0;
@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     text-align: center;
     padding: 20px;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--background-color);
     margin: 0 15px;
     text-decoration: none;
     transition: color var(--transition-speed);
@@ -66,7 +66,7 @@ main {
 section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: solid;
     border-radius: var(--border-radius);
 }
 
@@ -80,7 +80,7 @@ picture img {
 }
 
 details {
-    border: 1px solid #ddd;
+    border: solid;
     border-radius: var(--border-radius);
     padding: 10px;
     margin: 10px 0;
@@ -90,7 +90,7 @@ details {
 
 details summary:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     cursor: pointer;
     border-radius: var(--border-radius);
     padding: 5px;
@@ -106,12 +106,12 @@ footer {
     align-items: center;
     background-color: var(--primary-color);
     padding: 1em;
-    color: white;
+    color: var(--background-color);
     flex-wrap: wrap;
 }
 
 footer a {
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
 }
 

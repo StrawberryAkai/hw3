@@ -1,14 +1,14 @@
 :root {
     --primary-color: #3498db;
-    --secondary-color: #405871;
+    --secondary-color: gray;
     --background-color: white;
     --border-radius: 5px;
     --transition-speed: 0.3s;
 }
 
 body {
-    background-color: #eee;
-    color: #222;
+    background-color: var(--background-color);
+    color: black;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     margin: 0;
@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     text-align: center;
     padding: 20px;
 }
@@ -57,7 +57,7 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: var(--border-radius);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
@@ -66,7 +66,7 @@ main {
 section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: solid;
     border-radius: var(--border-radius);
 }
 
@@ -106,7 +106,7 @@ input,textarea,datalist{
     width: 75%;
     padding: 10px;
     margin: 10px;
-    border: 1px solid #ddd;
+    border: solid;
     border-radius: var(--border-radius);
     transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
     color: black;
@@ -117,8 +117,8 @@ textarea {
 }
 
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
