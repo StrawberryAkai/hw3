@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="/"><span class="nav-section">Home</span></a>
+            <a href="about.html"><span class="nav-section">About Me</span></a>
+            <a href="contact.html"><span class="nav-section">Contact</span></a>
+            <a href="labs.html"><span class="nav-section">Labs</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contact">
+            <form id="contact-form" action="#" method="post">
+                <fieldset>
+                    <legend>Contact Form: </legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="subject">Subject: </label>
+                    <input type="text" id="subject" name="subject" list="subject-list">
+                    <datalist id="subject-list">
+                        <option value="Recruitment">
+                        <option value="Collaboration">
+                        <option value="Feedback">
+                        <option value="Other">
+                    </datalist>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="mailto:your.email@example.com">zihun1392@gmail.com</a>
+        </address>
+
+        <aside>
+            <i>Github</i>: <a href="https://github.com/yourusername" target="_blank">github</a>
+            <i>LinkedIn</i>: <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin</a>
+        </aside>
+    </footer>
+
+    <noscript>
+        <div class="noscript-warning">
+            <p>Please enable JavaScript to view this website properly.</p>
+        </div>
+    </noscript>
+
+
+    <script></script>
+
+</body>
+</html>

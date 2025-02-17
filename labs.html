@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="/"><span class="nav-section">Home</span></a>
+            <a href="about.html"><span class="nav-section">About Me</span></a>
+            <a href="contact.html"><span class="nav-section">Contact</span></a>
+            <a href="labs.html"><span class="nav-section">Labs</span></a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <callout-box class="warning">
+            <div class="icon">⚠️</div>
+            <div class="content">
+                <h3>Important Notice</h3>
+                <p>This is a warning message. Please proceed with caution.</p>
+            </div>
+        </callout-box>
+    </main>
+
+    <hello-world></hello-world>
+
+    <noscript>
+        <div class="noscript-warning">
+            <p> Please enable JavaScript to view this website properly.</p>
+        </div>
+    </noscript>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+        constructor() {
+            super();
+            console.log("Hello World!");
+        }
+        }
+
+        customElements.define('hello-world', HelloWorld);
+
+    </script>
+
+</body>
+</html>
